@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+      html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+      }
+      *{
+        font-family: 'Press Start 2P';
+        /* font-family: 'VT323'; */
+        box-sizing: border-box;
+      }
+
+      img{
+        width: 380px;
+        height: 350px;
+        margin: 15px;
+      }
+
+      .pills {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+      }
+
+      .redPill{
+        color: red;
+        cursor: pointer;
+      }
+
+      .bluePill{
+        color: blue;
+        cursor: pointer;
+      }
+
+      .app{
+        padding: 1rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        color: #54fe55;
+        text-shadow: 0px 0px 10px;
+        gap: 20px;
+
+      }
+
+      .app, .txt{
+        font-size: 1.8rem;
+      }
+
+      /* Definicion de keyframes llamado blink para animacion de parpadeo */
+      @keyframes blink {
+        0%{
+            opacity: 0;
+        }
+        49%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+        }
+      }
+
+      /* @keyframes blink{
+        0%{
+            transform: translate((-2.5rem,0)
+            rotate(0deg));
+        }
+        100%{
+            transform: translate((-2.5rem,0) rotate(0deg));
+        }
+      } */
+
+      .blink{
+        animation-name: blink;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      
+    </style>
+    <title>403</title>
+  </head>
+  <body>
+    <div class="app">
+      <div>403</div>
+      <div class="txt">Acceso prohibido<span class="blink">_</span></div>
+      <div><img src="assets/morfeo.png" alt=""></div>
+      <div class = "pills">
+        <span class="redPill">Roja</span>
+        <span class="bluePill">Azul</span>
+    </div>
+    </div>
+  </body>
+</html>
